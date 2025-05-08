@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CheckMate</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" type="image/x-icon" />
+  <style>
+    @font-face {
+      font-family: Welbut;
+      src: url(https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@1a76faa2e20ca0c687b2d821c40036f05b67ab73/Welbut__.ttf);
+    }
+
+    body {
+      background-color: #fefaf8;
+      margin: 0;
+      font-family: Welbut, sans-serif;
+      color: #1b1102;
+      text-align: center;
+      padding: 20px 40px;
+    }
+
+    p
+    {
+      padding-bottom: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 100px;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #1b1102;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #dcd4c1;
+      color: black;
+      border-radius: 12px;
+    }
+
+    .card-rows {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .member-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      padding: 16px;
+      transition: transform 0.2s;
+      flex: 1 1 150px;
+      max-width: 180px;
+      min-width: 140px;
+    }
+
+    .member-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .member-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .member-card h3 {
+      margin-top: 12px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@f8a216bb2f1e79f689409fb177d5ff8443fcd503/CheckMate1.png" alt="CheckMate Logo"></a>
+    <nav>
+      <a href="welcomepage.html">Home</a> |
+      <a href="todolist.html">Task</a> |
+      <a href="about-us.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Us</h1>
+    <p>BSINFOTECH 2A</p>
+    <div class="card-rows">
+      <div class="card-row">
+        <div class="member-card">
+          <img src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" alt="Mean Dianne J. Lego">
+          <h3>Mean Dianne J. Lego</h3>
+        </div>
+        <div class="member-card">
+          <img src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" alt="Martha Nicole M. Exala">
+          <h3>Martha Nicole M. Exala</h3>
+        </div>
+        <div class="member-card">
+          <img src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" alt="Veronica Joy S. Pavia">
+          <h3>Veronica Joy S. Pavia</h3>
+        </div>
+        <div class="member-card">
+          <img src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" alt="Giselle Cassandra Dela Peña">
+          <h3>Giselle Cassandra Dela Peña</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div style="height: 60px;"></div>
+</body>
+</html>

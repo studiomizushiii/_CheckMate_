@@ -1,0 +1,82 @@
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+   }
+   @font-face {
+      font-family: Welbut;
+      src: url(https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@1a76faa2e20ca0c687b2d821c40036f05b67ab73/Welbut__.ttf);
+    }
+
+    body {
+      background-image: url(https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@f2847eb1157e3b40f656897827c5014e5410e2d6/bg-welcomep.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      font-family: Welbut, sans-serif;
+      color: #1b1102;
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header 
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+    } 
+
+    .logo {
+      height: 100px;
+    }
+
+    nav {
+      overflow: hidden;
+      text-align: right;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #1b1102;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: hsl(44, 21%, 86%);
+      color: black;
+      border-radius: 12px;
+    }
+
+    h3{
+      padding-bottom: 20px;
+    }
+
+    .hollow-button {
+      font-family: Welbut, sans-serif;
+      background-color: transparent;
+      border: 2px solid #1b1102;
+      color: #1b1102;
+      padding: 10px 25px;
+      font-size: 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+     
+      
+    }
+    
+    .hollow-button:hover {
+      background-color: #1b1102;
+      color: #fff;
+    }
+    

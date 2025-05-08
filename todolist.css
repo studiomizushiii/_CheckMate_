@@ -1,0 +1,317 @@
+@font-face {
+  font-family: Welbut;
+  src: url(https://cdn.jsdelivr.net/gh/mizureoo/hbdddd@b42edeccf85922a3533052901e56ba002cf5673c/Welbut__.ttf);
+}
+
+body {
+  font-family: Welbut, sans-serif;
+  background-color: #F7F9FC;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+} 
+
+.logo {
+  height: 100px;
+}
+
+nav {
+  overflow: hidden;
+  text-align: right;
+}
+
+nav a {
+  display: inline-block;
+  color: #1b1102;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #dcd4c1;
+  color: black;
+  border-radius: 12px;
+}
+
+.reminder-banner {
+  background-color: #fff6d5;
+  color: #1b1102;
+  border: 1px solid #e0c47c;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 10px auto;
+  width: fit-content;
+  max-width: 80%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+.reminder-banner button {
+  margin-left: 20px;
+  padding: 4px 12px;
+  border: none;
+  background-color: #e0c47c;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Welbut, sans-serif;
+}
+.reminder-banner button:hover {
+  background-color: #d2b866;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.todolist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.taskbox {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.taskbox h2 {
+  margin-top: 0;
+  font-size: 20px;
+  border-bottom: 2px solid #00000044;
+  padding-bottom: 10px;
+}
+
+.taskbox p {
+  margin-top: 10px;
+  color: #3a3939;
+}
+
+.input-area {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.input-area input {
+  padding: 10px;
+  font-family: Welbut, sans-serif;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: rgb(54, 38, 6);
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-area button:hover {
+  background-color: #725a3a;
+}
+
+.done-btn {
+  background-color: #725a3a;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.done-btn:hover {
+  background-color: hsl(37, 23%, 37%);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.task-item p {
+  flex-grow: 1;
+  margin: 0;
+}
+
+#here {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.editTask {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  z-index: 1000;
+  display: none; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+ text-align: center;
+}
+
+#editTaskInput {
+  border: none; 
+  background-color: transparent; 
+  color: #000; 
+  outline: none; 
+  font-family: Welbut, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.editTask.show {
+  display: block; 
+}
+
+.button {
+  margin-top: 15px;
+  padding: 5px 15px;
+  font-family: 'Welbut', sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color:  rgb(54, 38, 6);
+  color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #7e7363;
+}
+.completed-popup {
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  z-index: 1000;
+  display: none; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+ text-align: center;
+}
+
+#completedTaskInput {
+  border: none; 
+  background-color: transparent; 
+  color: #000; 
+  outline: none; 
+  font-family: Welbut, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.editTask.show {
+  display: block; 
+}
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  z-index: 1000;
+  display: none; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+ text-align: center;
+}
+
+@media (max-width: 900px) {
+  .todolist {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .todolist {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+footer{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+  .vwrap, .vslide {
+     width: 100%; height: 100px; 
+    }
+
+ .vwrap {
+  overflow: hidden; 
+}
+
+ .vslide {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .vmove {
+  position: relative; bottom: 0;
+}
+
+ @keyframes slidev {
+  0% { bottom: 0; } 24% { bottom: 0; }
+  25% { bottom: 100%; } 49% { bottom: 100%; }
+  50% { bottom: 200%; } 74% { bottom: 200%; }
+  75% { bottom: 300%; } 99% { bottom: 300%; }
+  100% { bottom: 0; }
+}
+
+.vmove.vmove {
+   animation: slidev 12s infinite; 
+  }
+
+.vmove:hover {
+   animation-play-state: paused; 
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Profile</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <div class="profile-header">
+    <button class="nav-button" onclick="window.history.back()">Back</button>
+    <h1>    </h1>
+    <button id="skipButton" class="nav-button">Skip</button>
+  </div>  
+
+  <div class="form-container">
+    <form id="profileForm">
+      <div class="left-section">
+        <div class="preview-container">
+          <img id="picturePreview" src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@3af8c158339ea08958173dab8d60878cf0fa71de/insert.png">
+        </div>
+        <label for="picture" class="custom-file">Upload Picture</label>
+        <input type="file" id="picture" accept="image/*">
+      </div>
+
+      <div class="form-content">
+        <H2>CREATE PROFILE</H2>
+        <label>Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Nickname:</label>
+        <input type="text" id="nickname" required>
+
+        <button type="submit">Save Profile</button>
+      </div>
+    </form>
+  </div>
+<script src="profile.js"> </script>
+</body>
+</html> 

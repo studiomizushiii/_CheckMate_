@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="welcomepage.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@f8a216bb2f1e79f689409fb177d5ff8443fcd503/CheckMate1.png" alt="CheckMate Logo"></a>
+    <nav>
+      <a href="welcomepage.html">Home</a> |
+      <a href="todolist.html">Task</a> |
+      <a href="about-us.html">About Us</a>
+    </nav>
+
+  </header>
+    <img id="picture" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+    <h1 id="welcomeMessage">Welcome!</h1>
+    <h3>win the day, make your next move.</h3>
+    <a href="todolist.html" class="hollow-button">Create a task!</a>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("checkmateProfile"));
+    if (user && user.nickname) 
+    {
+         document.getElementById("welcomeMessage").textContent = `Welcome, ${user.nickname}!`;
+         document.getElementById("picture").src = user.picture || '';
+    }
+  </script>
+</body>
+</html>

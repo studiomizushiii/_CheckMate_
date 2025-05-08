@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To Do List</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@92d21e3f4cf850fe1b3179e725736b89e164fefe/icon1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="https://cdn.jsdelivr.net/gh/studiomizushiii/CheckMate@f8a216bb2f1e79f689409fb177d5ff8443fcd503/CheckMate1.png" alt="CheckMate Logo"></a>
+    <nav>
+      <a href="welcomepage.html">Home</a> |
+      <a href="todolist.html">Task</a> |
+      <a href="about-us.html">About Us</a>
+    </nav>
+  </header>
+  
+  <div id="reminderBanner" style="display: none;" class="reminder-banner">
+    📌 Don't forget to bookmark this page to pick up where you left off!
+    <button onclick="dismissReminder()">Got it</button>
+  </div>
+
+  <h1 id="welcomeMessage">Welcome!</h1>
+
+  <div class="input-area">
+    <input type="text" id="dito" placeholder="Enter your task here...">
+    <button id="addTask">+</button>
+  </div>
+
+  <div id="taskSidebar" class="editTask">
+    <h3>Edit Task</h3>
+      <input type="text" id="editTaskInput" />
+      <div class="button-style">
+        <button id="saveEditBtn" class="button">Save</button>
+        <button id="deleteTaskBtn" class="button">Delete</button>
+        <button id="closeSidebarBtn" class="button">Close</button>
+      </div>
+  </div>
+
+  <div id="completedTasks" class="completed-popup" style="display: none;">
+    <h3>Task Details</h3>
+    <input type="text" id="completedTaskInput" readonly />
+    <div class="completedtask-buttons">
+      <button id="doneBtn" class="button">Checkmate</button>
+      <button id="closeCompletedBtn" class="button">Withdraw</button>
+    </div>
+  </div>  
+
+  <div id="wonPopup" class="popup" style="display: none;">
+    <h3>Great job!<br> your effort was impressive.</h3>
+    <div class="popup-buttons">
+      <button id="closeWonBtn" class="button">thanks!</button>
+    </div>
+  </div>
+
+  <div id="here"></div>
+
+  <div class="todolist">
+    <div class="taskbox" id="taskbox">
+      <h2>Queue</h2>
+      <p id="noTasksMessage" style="display: none;">No tasks yet. <br>Tasks will appear here soon.</p>
+    </div>
+    <div class="taskbox" id="inProgressBox">
+      <h2>Clock's Ticking</h2>
+      <p  id="noTasksMessage" style="display: none;">No tasks yet. <br> Tasks will appear here soon.</p>
+    </div>
+    <div class="taskbox" id="completedBox">
+      <h2>Checkmate</h2>
+      <p id="noTasksMessage" style="display: none;">No tasks yet. <br> Tasks will appear here soon.</p>
+    </div>
+  </div>
+
+  <script src="todolist.js"></script>
+
+  <footer>
+    <div class="vwrap"><div class="vmove">
+      <div class="vslide">To edit a task, simply click on it.</div>
+      <div class="vslide">Chess is over 1,500 years old, originating in India as a game called chaturanga.</div>
+      <div class="vslide">Did you know that im riding this horse backwards?</div>
+      <div class="vslide">Known as Fool's Mate, a checkmate can happen in just 2 moves.</div>
+    </div></div>
+  </footer>
+</body>
+</html>

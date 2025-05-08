@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Welbut;
+  src: url(https://cdn.jsdelivr.net/gh/mizureoo/hbdddd@b42edeccf85922a3533052901e56ba002cf5673c/Welbut__.ttf);
+}
+
+body {
+  background: #FFF9F5;
+  font-family: Welbut, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ padding-top: 30px;
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
+  
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+  flex-grow: 1;
+  padding: 50px 100px;
+  white-space: nowrap;
+}
+
+.nav-button {
+  background: rgb(54, 38, 6);
+  color: whitesmoke;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left: 45px;
+  margin-right: 45px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Welbut, sans-serif;
+ 
+}
+
+.nav-button:hover {
+  background: rgb(67, 47, 7);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+form {  
+  background: #FFFFFF;
+  max-width: 650px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border: 1px solid hsl(0, 0%, 83%);
+  border-radius: 10px;
+  box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 100px;
+}
+
+.preview-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #220000;
+  background-color: lch(95.84% 0.01 296.81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.preview-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-file {
+  display: inline-block;
+  padding: 10px;
+  background-color: #3a2b0f;
+  color: whitesmoke;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+}
+
+.form-content {
+  flex: 1;
+  font-size: 20px;
+}
+
+.form-content h2{
+  flex: 1;
+  padding-bottom: 20px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #221300;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background: rgb(54, 38, 6);
+  color: whitesmoke;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  font-family: Welbut, sans-serif;
+}
+
+button:hover {
+  background: rgb(67, 47, 7);
+}
+
+input[type="file"] {
+  display: none;
+}
