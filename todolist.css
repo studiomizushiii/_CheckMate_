@@ -3,6 +3,18 @@
   src: url(https://cdn.jsdelivr.net/gh/mizureoo/hbdddd@b42edeccf85922a3533052901e56ba002cf5673c/Welbut__.ttf);
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  overflow: auto;
+}
+
 body {
   font-family: Welbut, sans-serif;
   background-color: #F7F9FC;
@@ -211,7 +223,7 @@ h1 {
   background-color: #7e7363;
 }
 .completed-popup {
-   position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
@@ -224,7 +236,7 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   transition: opacity 0.3s ease;
- text-align: center;
+  text-align: center;
 }
 
 #completedTaskInput {
@@ -272,21 +284,21 @@ h1 {
 
 footer{
     background-color: white;
+    border-radius: 20px;
     color: black;
     padding: 10px;
     text-align: center;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto; 
 }
 
 
-  .vwrap, .vslide {
+.vwrap, .vslide {
      width: 100%; height: 100px; 
     }
 
- .vwrap {
+.vwrap {
   overflow: hidden; 
 }
 

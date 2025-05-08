@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
- padding-top: 30px;
+  padding-top: 30px;
   margin: 0 auto;
   max-width: 650px;
   width: 100%;
@@ -139,6 +139,7 @@ input[type="text"], select {
   margin-bottom: 25px;
   border: 1px solid #221300;
   border-radius: 10px;
+  font-family: Welbut, sans-serif;
   font-size: 15px;
   box-sizing: border-box;
 }
